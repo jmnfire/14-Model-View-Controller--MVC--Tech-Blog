@@ -2,7 +2,7 @@
     <div class='col-auto'>
     <h2>
         Welcome,
-        {{name}}!
+        {{username}}!
     </h2>
     </div>
 </div>
@@ -15,14 +15,14 @@
 
     <form class='form new-blog-form'>
       <div class='form-group'>
-        <label for='blog-name'>
-          Title:
+        <label for='blog-title'>
+          Blog Title:
         </label>
-        <input class='form-input' type='text' id='blog-name' name='blog-name' />
+        <input class='form-input' type='text' id='blog-title' ='blog-title' />
       </div>
       <div class='form-group'>
         <label for='blog-desc'>
-          Content:
+          Description:
         </label>
         <textarea class='form-input' id='blog-desc' name='blog-desc'></textarea>
       </div>
@@ -45,7 +45,7 @@
           <div class='col-md-8'>
             <h4>
               <a href='/blog/{{blog.id}}'>
-                {{blog.name}}
+                {{blog.title}}
               </a>
             </h4>
           </div>
