@@ -1,14 +1,17 @@
 [
   {
     "username": "Jovan",
-    "password": "password12345"
+    "password": "password12345",
+    "user_id": 1
   },
   {
     "username": "Odin",
-    "password": "password12345"
+    "password": "password12345",
+    "user_id": 2
   },
   {
     "username": "Emily",
-    "password": "password12345"
+    "password": "password12345",
+    "user_id": 3
   }
 ]

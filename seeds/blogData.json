@@ -1,16 +1,16 @@
 [
   {
-    "title": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "title": "Apples New Hire Needs to Be Heroic",
+    "description": "Let's talk about Apple this week. Then we'll close with the product of the week: the HP Elite Folio Notebook.",
     "user_id": 1
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "title": "A Linux Safari to Classify the Genus of This Penguin",
+    "description": "In the eyes of many desktop Linux users, it's considered a rite of passage to install this historically significant distribution.",
     "user_id": 2
   },
   {
-    "title": "Roll 'Em Up",
+    "title": "Standout Tech Products of 2020",
     "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
     "user_id": 3
   }
