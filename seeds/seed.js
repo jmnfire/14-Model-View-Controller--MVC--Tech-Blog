@@ -26,28 +26,12 @@ const seedDatabase = async () => {
     });
   }
 
-  process.exit(0);
-};
-
-const seedComments = async () => {
-  await sequelize.sync({
-    force: true
-  });
-
-  const users = await Comment.bulkCreate(commentData, {
+  const comments = await Comment.bulkCreate(commentData, {
     individualHooks: true,
     returning: true,
   });
-
-  for (const blog of blogData) {
-    await Blog.create({
-      ...blog,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
 
   process.exit(0);
 };
 
 seedDatabase();
-seedComments();
