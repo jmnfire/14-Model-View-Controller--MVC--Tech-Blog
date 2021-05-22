@@ -1,12 +1,43 @@
+// const commentFormHandler = async function(event) {
+//   event.preventDefault();
+
+//   // const postId = document.querySelector('input[name="post-id"]').value;
+//   const body = document.querySelector('#comment_description').value.trim();
+
+//   if (body) {
+//     await fetch('/api/comments', {
+//       method: 'POST',
+//       body: JSON.stringify({
+//         // postId,
+//         body
+//       }),
+//       headers: {
+//         'Content-Type': 'application/json'
+//       }
+//     });
+
+//     document.location.reload();
+//   }
+// };
+
+// document
+//   .querySelector('#new-comment-form')
+//   .addEventListener('submit', commentFormHandler);
+
+
+
+
+
 const commentFormHandler = async (event) => {
     event.preventDefault();
-    const comment_description = document.querySelector('#comment_description').value.trim();
+    const body = document.querySelector('#comment_description').value.trim();
     const blog_id = document.querySelector('.comment-form').dataset.blogid;
-    if (comment_description && blog_id) {
+    if (body) {
       const response = await fetch('/api/comments', {
         method: 'POST',
-        body: JSON.stringify({ comment_description, blog_id }),
         headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({body}),
+        
       });
       if (response.ok) {
         document.location.replace('/dashboard');
@@ -19,38 +50,3 @@ const commentFormHandler = async (event) => {
   .querySelector('.comment-form')
   .addEventListener('submit', commentFormHandler);
 
-
-
-
-// async function commentFormHandler(event) {
-//     event.preventDefault();
-
-//     const comment_text = document.querySelector('input[name="comment-body"]').value.trim();
-
-//     const user_id = window.location.toString().split('/')[
-//         window.location.toString().split('/').length - 1
-//     ];
-
-//     if (comment_text) {
-//         const response = await fetch('/api/comments', {
-//             method: 'POST',
-//             body: JSON.stringify({
-//                 user_id,
-//                 comment_text
-//             }),
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             }
-//         });
-
-//         if (response.ok) {
-//             document.location.reload();
-
-//         } else {
-//             alert(response.statusText);
-//             document.querySelector('#comment-form').style.display = "block";
-//         }
-//     }
-// }
-
-// document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
