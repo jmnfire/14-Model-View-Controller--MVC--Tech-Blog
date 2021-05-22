@@ -7,7 +7,7 @@
 {{#if logged_in}}
 <form class="comment-form" data-blogid={{blog.id}}>
   <div>
-    <textarea class="ml-5" name="comment-body"></textarea>
+    <textarea class="ml-5" id='comment_description' name="comment-body"></textarea>
   </div>
   <div>
     <button class="button is-warning ml-5 mb-5" type="submit">Add Comment</button>
@@ -16,7 +16,7 @@
 {{/if}}
 </div>
  {{#each comments as |comment|}}
- <div style="border-style: dashed;">
+ <div style="border-style: solid;">
  <p>{{comment.comment_description}}</p>
  </div>
  {{/each}}
