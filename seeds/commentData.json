@@ -2,14 +2,17 @@
 [
     {
         "comment_description": "Love it!",
-        "user_id": 1
+        "user_id": 1,
+        "blog_id": 1
     },
     {
         "comment_description": "So COOL!",
-        "user_id": 2
+        "user_id": 2,
+        "blog_id": 2
     },
     {
-        "comment_description": "Wow can't wait to play this!",
-        "user_id": 3
+        "comment_description": "Wow can't wait to play ",
+        "user_id": 3,
+        "blog_id": 3
     }
 ]
