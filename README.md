@@ -38,16 +38,11 @@ jmnfire
 https://github.com/jmnfire/14-Model-View-Controller--MVC--Tech-Blog
 
 ### To access the website via Heroku
-https://dashboard.heroku.com/apps/rocky-ocean-10109
+https://nameless-mountain-83637.herokuapp.com/
 
 ### Email address 
 jovan.m.nixon@gmail.com
 
-
-# Demo
-
-## Create Schema and Seed data
-![Demo of README](./images/demo1.gif)
 
 
 # Badges
